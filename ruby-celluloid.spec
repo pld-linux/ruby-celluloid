@@ -5,12 +5,12 @@
 %define	pkgname	celluloid
 Summary:	Actor-based concurrent object framework for Ruby
 Name:		ruby-%{pkgname}
-Version:	0.15.1
-Release:	2
+Version:	0.15.2
+Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	8e28d7173292ea55aaa727b0a0da8913
+# Source0-md5:	ceaf6e864471fa988290bd18b69dc799
 URL:		https://github.com/celluloid/celluloid
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
