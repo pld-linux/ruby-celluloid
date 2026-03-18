@@ -5,12 +5,12 @@
 %define	pkgname	celluloid
 Summary:	Actor-based concurrent object framework for Ruby
 Name:		ruby-%{pkgname}
-Version:	0.15.2
-Release:	3
+Version:	0.18.0
+Release:	1
 License:	MIT
 Group:		Development/Languages
-Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	ceaf6e864471fa988290bd18b69dc799
+Source0:	https://rubygems.org/downloads/%{pkgname}-%{version}.gem
+# Source0-md5:	e0318948364639db1431cb875486f073
 URL:		https://github.com/celluloid/celluloid
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
@@ -20,9 +20,9 @@ BuildRequires:	ruby-guard-rspec
 BuildRequires:	ruby-rake
 BuildRequires:	ruby-rspec
 %endif
-Requires:	ruby-rubygems >= 1.3.6
-Requires:	ruby-timers < 1.2
-Requires:	ruby-timers >= 1.1.0
+Requires:	ruby-rubygems >= 2.0.0
+Requires:	ruby-timers < 5
+Requires:	ruby-timers >= 4.1.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,6 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README.md LICENSE.txt CHANGES.md
 %{ruby_vendorlibdir}/celluloid.rb
 %{ruby_vendorlibdir}/celluloid
 %{ruby_specdir}/celluloid-%{version}.gemspec
