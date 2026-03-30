@@ -6,7 +6,7 @@
 Summary:	Actor-based concurrent object framework for Ruby
 Name:		ruby-%{pkgname}
 Version:	0.18.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 Source0:	https://rubygems.org/downloads/%{pkgname}-%{version}.gem
